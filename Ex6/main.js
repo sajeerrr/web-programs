@@ -18,7 +18,7 @@ function validateform() {
 
     //email validation
     if(!email.match(emailpattern)){
-        alert("Please enter a valid Email");
+        alert("Please enter a valid email like example@email.com");
         return false;
     }
 
