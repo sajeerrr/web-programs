@@ -21,17 +21,20 @@ function validateform() {
         alert("Please enter a valid email like example@email.com");
         return false;
     }
-
+    
+    //phone
     if(phone === ""){
         alert("phone cannot be empty");
         return false;
     }
-
+    
+    //dob
     if(dob === ""){
         alert("dob cannot be empty");
         return false;
     }
-
+    
+    //address
     if(address === ""){
         alert("address cannot be empty");
         return false;
@@ -49,6 +52,7 @@ function validateform() {
         return false;
     }
 
+    //reg sucessfull message
     alert("Registration Successful!");
     return true;
 }
