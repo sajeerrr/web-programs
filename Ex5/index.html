@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creative Blog Comment Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Share Your Thoughts</h2>
+
+    <form>
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" pattern="[A-Za-z ]+"  title="Only letters allowed" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com" pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address" required>
+        </div>
+
+        <div class="form-group">
+            <label>Comment</label>
+            <textarea rows="4" maxlength="250"
+                      placeholder="Write your comment..."
+                      required></textarea>
+            <small>Maximum 250 characters</small>
+        </div>
+
+        <a href="#popup" class="btn" >Post Comment</a>
+
+        <div id="popup" class="overlay">
+            <p class="p" >Registration Successfull</p>
+            <a href="#" class="h" >OK</a>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

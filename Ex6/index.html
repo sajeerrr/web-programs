@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registeration-Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="main-box">
+            <h2>Registration Form</h2>
+
+            <form onsubmit="return validateform()">
+
+                <div class="form-box">
+                    <label>Name</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="form-box">
+                    <label>Email</label>
+                    <input type="email" id="email">
+                </div>
+                
+                <div class="form-box">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone">
+                </div>
+                
+                <div class="form-box">
+                    <label>Gender</label>
+                    <div class="gender-box">
+                        <label><input type="radio" name="gender">Male</label>
+                        <label><input type="radio" name="gender">Female</label>
+                        <label><input type="radio" name="gender">Other</label>
+                    </div>
+                </div>
+                
+                <div class="form-box">
+                    <label>Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+                
+                <div class="form-box">
+                    <label>Address</label>
+                    <textarea rows="3" id="address"></textarea>
+                </div>
+                
+                <div class="form-box">
+                    <label>Password</label>
+                    <input type="password" id="password">
+                </div>
+                
+                <div class="form-box">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmpassword">
+                </div>
+                
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
