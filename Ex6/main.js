@@ -15,4 +15,12 @@ function validateform() {
         alert("Name cannot be empty");
         return false;
     }
+
+    //email validation
+    if(!email.match(emailpattern)){
+        alert("Please enter a valid Email");
+        return false;
+    }
+
+    
 }
